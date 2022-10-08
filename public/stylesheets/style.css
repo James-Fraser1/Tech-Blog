@@ -1,0 +1,28 @@
+* {
+    text-align: center;
+}
+.navbar-item img {
+    max-height: 5rem;
+}
+
+.login-form {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(24, 28, 220);
+    max-width: min-content;
+    margin: auto;
+}
+
+.signup-form {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(218, 45, 10);
+    max-width: min-content;
+    margin: auto;
+}
+
+.lockedFooter {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}

@@ -1,0 +1,31 @@
+{
+  "name": "mvc-tech-blog",
+  "version": "1.0.0",
+  "description": "## **Table of Contents** 1. [Project Description](#description) 2. [Installation](#installation) 3. [Usage](#usage) 4. [Questions](#questions)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/James-Fraser1/MVC-Tech-Blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/James-Fraser1/MVC-Tech-Blog/issues"
+  },
+  "homepage": "https://github.com/James-Fraser1/MVC-Tech-Blog#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "connect-session-sequelize": "^7.1.5",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "express-session": "^1.17.3",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.22.1"
+  }
+}

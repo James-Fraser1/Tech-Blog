@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <title>MVC Tech Blog</title>
+</head>
+
+<body>
+
+    <nav class="navbar is-dark" id="nav" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/dashboard">
+                <img src="/imgs/logo.jpeg" width="80" height="80">
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="/">
+                    Home
+                </a>
+
+                <a class="navbar-item" id="new-post-form" href="/dashboard">
+                    Dashboard
+                </a>
+
+                <a class="navbar-item" href="/login">
+                    Login
+                </a>
+
+                <a class="navbar-item" id="logout-form" href="/login">
+                    Logout
+                </a>
+            </div>
+        </div>
+    </nav>
+<br>
+
+    <main>
+        {{{ body }}}
+    </main>
+<br>
+    <body class="lockedFooter">
+        <footer>
+            <div class="content has-text-centered">
+                <p>
+                    <strong>MVC-TECH-BLOG</strong> by <a href="https://github.com/James-Fraser1/MVC-Tech-Blog">James
+                        Fraser</a>.
+                </p>
+            </div>
+        </footer>
+    </body>
+
+</body>
+
+</html>
+
+{{#if loggedIn}}
+<script src="/javascript/logout.js"></script>
+{{/if}}
